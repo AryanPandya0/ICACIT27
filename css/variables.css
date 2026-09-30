@@ -1,0 +1,93 @@
+/* ==========================================================================
+   TYPOGRAPHY & COLORS DESIGN SYSTEM TOKENS
+   Typography:
+     Primary font: Urbanist (Regular 400, Medium 500)
+     Secondary font: Mont / Montserrat (Light 300, Regular 400, Medium 500)
+   Colors:
+     Background: Soft Lavender (#F0F0FF)
+     Accent Pink: #E9A1FF
+     White: #FFFFFF
+     Black: #0E0E0E
+     Gradient: #EEA1FF → #4E6AFF
+   ========================================================================== */
+
+:root {
+  /* --- Primary Color Palette --- */
+  --bg-body: #F0F0FF;                     /* Soft Lavender primary background */
+  --bg-surface: #FFFFFF;                  /* Pure White surfaces */
+  --bg-surface-subtle: #F6F6FF;           /* Subtle Lavender surface */
+  --bg-surface-glass: rgba(255, 255, 255, 0.78);
+  --bg-surface-glass-dark: rgba(14, 18, 50, 0.75);
+
+  /* --- Specified Colors --- */
+  --color-pink: #E9A1FF;                  /* Accent Pink */
+  --color-pink-bright: #EEA1FF;           /* Gradient Pink start */
+  --color-blue: #4E6AFF;                  /* Gradient Electric Blue end */
+  --color-violet: #B88CFF;                /* Soft Violet midtone */
+  --color-dark: #0E0E0E;                  /* Black text & accents */
+  --color-indigo-deep: #12163b;
+
+  /* --- Hero & Accent Gradients --- */
+  --grad-hero: linear-gradient(135deg, #12163b 0%, #1c2668 35%, #4E6AFF 65%, #B88CFF 85%, #EEA1FF 100%);
+  --grad-accent: linear-gradient(135deg, #EEA1FF 0%, #4E6AFF 100%);
+  --grad-accent-soft: linear-gradient(135deg, rgba(238, 161, 255, 0.18) 0%, rgba(78, 106, 255, 0.1) 100%);
+  --grad-pill-btn: linear-gradient(135deg, #EEA1FF 0%, #D490FF 100%);
+  --grad-glass-card: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(246, 246, 255, 0.7) 100%);
+  --grad-footer: linear-gradient(180deg, #18225e 0%, #0f153a 100%);
+
+  /* --- Text Colors --- */
+  --text-main: #0E0E0E;                   /* Primary black text */
+  --text-muted: #525266;                  /* Medium contrast text */
+  --text-subtle: #7A7A99;                 /* Tertiary text */
+  --text-white: #FFFFFF;                  /* White text */
+  --text-white-muted: rgba(255, 255, 255, 0.88);
+  --text-white-subtle: rgba(255, 255, 255, 0.65);
+
+  /* --- Borders & Outlines --- */
+  --border-subtle: rgba(78, 106, 255, 0.12);
+  --border-pink: rgba(233, 161, 255, 0.45);
+  --border-card: rgba(184, 140, 255, 0.22);
+  --border-hover: rgba(78, 106, 255, 0.35);
+  --border-glass-white: rgba(255, 255, 255, 0.35);
+
+  /* --- Typography (Urbanist & Mont / Montserrat) --- */
+  --font-family-base: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-heading: 'Urbanist', 'Montserrat', sans-serif;
+  --font-family-secondary: 'Montserrat', 'Urbanist', sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+
+  /* --- Font Sizes --- */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-huge: clamp(2.8rem, 6vw, 5.2rem);
+
+  /* --- Border Radius --- */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-pill: 9999px;
+
+  /* --- Shadows & Glows --- */
+  --shadow-soft: 0 10px 30px -5px rgba(78, 106, 255, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 16px 40px -10px rgba(78, 106, 255, 0.12), 0 4px 16px -2px rgba(0, 0, 0, 0.04);
+  --shadow-glow-pink: 0 8px 25px -4px rgba(233, 161, 255, 0.5);
+  --shadow-glow-blue: 0 8px 30px -4px rgba(78, 106, 255, 0.35);
+
+  /* --- Layout & Spacing --- */
+  --container-max: 1320px;
+  --container-padding: 2.5rem;
+  --header-height: 80px;
+
+  /* --- Transitions --- */
+  --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 320ms cubic-bezier(0.16, 1, 0.3, 1);
+}

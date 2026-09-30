@@ -1,0 +1,615 @@
+/* ==========================================================================
+   ICACIT 2027 — COMPONENTS
+   Pill Buttons with Arrow Badges, Floating Glass Stat Cards, Numbered Tracks,
+   Speaker Cards, Timeline, Modals
+   ========================================================================== */
+
+/* --- 1. Pill Buttons (Matching Reference Design) --- */
+.btn-pill-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.6rem 0.5rem 1.6rem;
+  background: var(--grad-pill-btn);
+  color: #0E0E0E;
+  font-family: var(--font-family-base);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: var(--radius-pill);
+  border: none;
+  box-shadow: 0 8px 24px -4px rgba(238, 161, 255, 0.5);
+  transition: all var(--transition-smooth);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-pill-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -4px rgba(238, 161, 255, 0.7);
+  color: #0E0E0E;
+}
+
+.btn-pill-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0E0E0E;
+  transition: transform var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.btn-pill-action:hover .btn-pill-arrow {
+  transform: translate(2px, -2px);
+}
+
+.btn-pill-arrow svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+}
+
+/* Secondary White Pill Button */
+.btn-pill-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.8rem;
+  background: #FFFFFF;
+  color: var(--text-main);
+  font-family: var(--font-family-base);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(78, 106, 255, 0.15);
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-fast);
+}
+
+.btn-pill-white:hover {
+  background: #F6F6FF;
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+  transform: translateY(-2px);
+}
+
+/* Glass Outline Pill */
+.btn-pill-glass {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.8rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #FFFFFF;
+  font-family: var(--font-family-base);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  transition: all var(--transition-fast);
+}
+
+.btn-pill-glass:hover {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* --- 2. Floating Hero Stat Cards (From Reference Design) --- */
+.hero-stats-group {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 5;
+}
+
+.hero-glass-pill-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.6rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-lg);
+  color: #FFFFFF;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.hero-glass-pill-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(238, 161, 255, 0.6);
+}
+
+.card-sparkle-icon {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  min-height: 22px;
+  fill: var(--color-pink);
+  color: var(--color-pink);
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 6px rgba(233, 161, 255, 0.6));
+}
+
+.stat-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.stat-card-desc {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+/* --- 3. Research Track Numbered Cards (Soft & Clean) --- */
+.tracks-grid-clean {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.track-item-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 2.2rem 2.4rem;
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-smooth);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.track-item-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--grad-accent);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.track-item-card:hover,
+.track-item-card.active {
+  transform: translateY(-4px);
+  border-color: rgba(184, 140, 255, 0.4);
+  box-shadow: var(--shadow-card);
+}
+
+.track-item-card:hover::after,
+.track-item-card.active::after {
+  opacity: 1;
+}
+
+.track-item-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.track-number-badge {
+  font-family: var(--font-family-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-blue);
+  background: rgba(78, 106, 255, 0.08);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.track-item-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.track-toggle-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #F0F0FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.track-item-card.active .track-toggle-arrow {
+  background: var(--color-blue);
+  color: #FFFFFF;
+  transform: rotate(180deg);
+}
+
+.track-expand-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, margin-top 0.2s ease;
+}
+
+.track-item-card.active .track-expand-body {
+  max-height: 320px;
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #F0F0FF;
+}
+
+.track-expand-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.track-pill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.track-pill-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  background: #F6F6FF;
+  border: 1px solid rgba(78, 106, 255, 0.12);
+  border-radius: var(--radius-pill);
+  color: var(--color-indigo);
+}
+
+/* --- 4. Editorial Keynote Speaker Cards --- */
+.speakers-grid-clean {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.speaker-editorial-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-editorial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--border-hover);
+}
+
+.speaker-photo-box {
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #EBEBFF 0%, #D8D8FF 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.speaker-avatar-initials {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(78, 106, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+.speaker-tag-pill {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.75rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: var(--radius-pill);
+  color: var(--color-blue);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.speaker-details {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.speaker-full-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.speaker-designation {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-blue);
+  margin-bottom: 0.25rem;
+}
+
+.speaker-affiliation {
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+  margin-bottom: 1.2rem;
+}
+
+.speaker-keynote-tag {
+  background: #F6F6FF;
+  border-left: 3px solid var(--color-blue);
+  padding: 0.75rem 1rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-top: auto;
+}
+
+.speaker-keynote-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* --- 5. Timeline Milestones (Soft & Clean) --- */
+.timeline-grid-clean {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+
+.milestone-clean-box {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 1.8rem 1.5rem;
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.milestone-clean-box.active-milestone {
+  border-color: var(--color-pink);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF8FF 100%);
+  box-shadow: 0 12px 30px -5px rgba(238, 161, 255, 0.35);
+}
+
+.milestone-clean-box:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+}
+
+.milestone-status-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.tag-active {
+  background: #FDF0FF;
+  color: #A836D6;
+  border: 1px solid rgba(238, 161, 255, 0.6);
+}
+
+.tag-upcoming {
+  background: #F0F0FF;
+  color: var(--text-subtle);
+  border: 1px solid rgba(78, 106, 255, 0.12);
+}
+
+.milestone-date-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.milestone-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-blue);
+  margin-bottom: 0.35rem;
+}
+
+.milestone-info {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* --- 6. Soft Modals --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(14, 18, 50, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-smooth);
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  background: #FFFFFF;
+  border-radius: var(--radius-2xl);
+  max-width: 620px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 60px -15px rgba(24, 29, 82, 0.25);
+  transform: translateY(20px) scale(0.97);
+  transition: transform var(--transition-smooth);
+  color: var(--text-main);
+  border: 1px solid rgba(184, 140, 255, 0.25);
+}
+
+.modal-overlay.active .modal-container {
+  transform: translateY(0) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.75rem 2rem;
+  border-bottom: 1px solid #F0F0FF;
+}
+
+.modal-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.modal-close-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #F6F6FF;
+  border: 1px solid rgba(78, 106, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  transition: all var(--transition-fast);
+}
+
+.modal-close-btn:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toast {
+  background: #0E0E0E;
+  color: #FFFFFF;
+  padding: 0.85rem 1.4rem;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  animation: toastSlide 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes toastSlide {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Floating Scroll Top Button */
+.btn-scroll-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(78, 106, 255, 0.15);
+  box-shadow: var(--shadow-card);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-smooth);
+  z-index: 900;
+}
+
+.btn-scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.btn-scroll-top:hover {
+  background: var(--color-blue);
+  color: #FFFFFF;
+  transform: translateY(-3px);
+}

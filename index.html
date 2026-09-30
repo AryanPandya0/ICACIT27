@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICACIT 2027 | International Conference on Advanced Computing and Intelligent Technologies</title>
+  <meta name="description" content="International Conference on Advanced Computing and Intelligent Technologies (ICACIT-2027), bringing together researchers, academicians, industry professionals, and students to exchange knowledge on emerging developments in computing and intelligent systems.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><polygon points=%2250,5 90,27 90,73 50,95 10,73 10,27%22 fill=%22%231E56FF%22/><text y=%22.62em%22 x=%2250%25%22 font-size=%2238%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22bold%22>IC</text></svg>">
+
+  <!-- Google Fonts: Urbanist & Mont / Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       DYNAMIC ISLAND FLOATING NAVIGATION
+       ========================================================================= -->
+  <div class="dynamic-island-wrapper">
+    <nav class="dynamic-island-nav" id="dynamicIslandNav" aria-label="Main Navigation">
+      
+      <!-- Brand with Pulse Indicator -->
+      <a href="#home" class="island-brand">
+        <span class="island-dot"></span>
+        <span class="island-brand-text">ICACIT 2027</span>
+      </a>
+
+      <!-- Menu Links -->
+      <ul class="island-menu-list" id="navMenuList">
+        <li><a href="#about" class="island-nav-link">About</a></li>
+        <li><a href="#objectives" class="island-nav-link">Objectives</a></li>
+        <li><a href="#tracks" class="island-nav-link">Focus Areas</a></li>
+        <li><a href="#governance" class="island-nav-link">Governance</a></li>
+        <li><a href="#timeline" class="island-nav-link">Timeline</a></li>
+        <li><a href="#registration" class="island-nav-link">Registration</a></li>
+        <li><a href="#institution" class="island-nav-link">Institution</a></li>
+        <li><a href="#venue" class="island-nav-link">Venue</a></li>
+      </ul>
+
+      <!-- Action Button & Mobile Drawer Toggle -->
+      <div class="island-actions">
+        <button class="btn-island-submit" data-modal-target="modalSubmission">Submit Paper</button>
+        <button class="mobile-island-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- =========================================================================
+       3. CINEMATIC HERO SECTION (ICACIT 2027)
+       ========================================================================= -->
+  <header class="hero-canvas-frame" id="home">
+    
+    <!-- Ambient Atmospheric Glow Backdrop -->
+    <div class="hero-ambient-glow"></div>
+
+    <!-- Hero Foreground Content Layer -->
+    <div class="container hero-content-layer">
+      
+      <!-- Top Metadata & Giant Multi-Line Headline -->
+      <div class="hero-interactive-row">
+        <div class="hero-date-location-tag">
+          JUNE 2027 • 2 DAYS • MBIT CAMPUS, CVM UNIVERSITY • VALLABH VIDYANAGAR, GUJARAT, INDIA
+        </div>
+
+        <h1 class="hero-giant-headline">
+          <span class="title-pink-line">ADVANCED COMPUTING</span>
+          <span class="title-white-line">&amp; INTELLIGENT TECHNOLOGIES</span>
+          <span class="title-bottom-impact">ICACIT 2027</span>
+        </h1>
+      </div>
+
+      <!-- Hero Bottom Split: Frosted Stat Cards + Right Action Callout -->
+      <div class="hero-bottom-split hero-interactive-row">
+        
+        <!-- Left Stats Pills Group (Matching Reference Design) -->
+        <div class="hero-stats-group">
+          
+          <div class="hero-glass-pill-card">
+            <svg class="card-sparkle-icon" viewBox="0 0 24 24">
+              <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="currentColor"/>
+            </svg>
+            <div>
+              <div class="stat-card-title">02 Full Days</div>
+              <div class="stat-card-desc">June 2027 • Hybrid Mode</div>
+            </div>
+          </div>
+
+          <div class="hero-glass-pill-card">
+            <svg class="card-sparkle-icon" viewBox="0 0 24 24">
+              <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="currentColor"/>
+            </svg>
+            <div>
+              <div class="stat-card-title">08 Focus Areas</div>
+              <div class="stat-card-desc">AI, Computing &amp; Intelligent Systems</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Description & Action Button -->
+        <div class="hero-right-callout">
+          <p class="hero-callout-text">
+            An international forum uniting researchers, academicians, and industry pioneers to exchange knowledge and shape the future of computing and intelligent systems.
+          </p>
+          <div style="display: flex; gap: 0.85rem; align-items: center; flex-wrap: wrap;">
+            <button class="btn-pill-action" data-modal-target="modalSubmission">
+              <span>SUBMIT PAPER</span>
+              <span class="btn-pill-arrow">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </button>
+            <a href="#registration" class="btn-pill-glass">
+              <span>REGISTER</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       4. ABOUT PROPOSED CONFERENCE
+       ========================================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>CONFERENCE OVERVIEW</span>
+        </div>
+        <h2 class="section-title">ABOUT PROPOSED CONFERENCE</h2>
+      </div>
+
+      <div class="about-split-grid">
+        
+        <!-- Left: Official Overview Description -->
+        <div>
+          <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--text-main); margin-bottom: 1.25rem; line-height: 1.3;">
+            A premier international forum connecting researchers, academicians, and industry pioneers.
+          </h3>
+
+          <p class="about-body-text">
+            The International Conference on Advanced Computing and Intelligent Technologies (ICACIT-2027) is envisioned as a high-quality international forum that brings together researchers, academicians, industry professionals, and students to share and exchange knowledge on the latest developments in computing and intelligent systems.
+          </p>
+
+          <p class="about-body-text">
+            The conference will span two full days and will include keynote addresses, technical paper presentations, panel discussions, and networking sessions.
+          </p>
+
+          <div style="margin-top: 2rem;">
+            <button class="btn-learn-more" data-modal-target="modalSubmission">Participate in ICACIT 2027</button>
+          </div>
+        </div>
+
+        <!-- Right: Target Participants Card -->
+        <div class="host-card-clean">
+          <div class="host-tag">TARGET COMMUNITY</div>
+          <h3 class="host-institute-name">200+ Expected Participants</h3>
+          <div class="host-university-name">Fostering collaboration across academia and industry</div>
+
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
+            ICACIT 2027 welcomes diverse delegates from across premier institutions and global technology domains:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem;">
+            <div style="background: #F6F6FF; padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.85rem; color: var(--color-blue);">
+              • Faculty Members
+            </div>
+            <div style="background: #F6F6FF; padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.85rem; color: var(--color-blue);">
+              • Researchers
+            </div>
+            <div style="background: #F6F6FF; padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.85rem; color: var(--color-blue);">
+              • Industry Professionals
+            </div>
+            <div style="background: #F6F6FF; padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.85rem; color: var(--color-blue);">
+              • PG Scholars
+            </div>
+            <div style="background: #F6F6FF; padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.85rem; color: var(--color-blue);">
+              • PhD Scholars
+            </div>
+            <div style="background: #F6F6FF; padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.85rem; color: var(--color-blue);">
+              • Students
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. OBJECTIVES OF ICACIT 2027
+       ========================================================================= -->
+  <section class="section section-white" id="objectives">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>CONFERENCE MISSION</span>
+        </div>
+        <h2 class="section-title">OBJECTIVES OF ICACIT 2027</h2>
+        <p class="section-subtitle">
+          Guiding principles and strategic milestones shaping the conference agenda and research impact.
+        </p>
+      </div>
+
+      <!-- 6 Numbered Objectives Grid -->
+      <div class="objectives-grid">
+        
+        <!-- Objective 01 -->
+        <div class="objective-card">
+          <span class="objective-num-badge">OBJECTIVE 01</span>
+          <p class="objective-text">
+            To provide a global platform for researchers and professionals to share recent advances in Artificial Intelligence and intelligent computing technologies.
+          </p>
+        </div>
+
+        <!-- Objective 02 -->
+        <div class="objective-card">
+          <span class="objective-num-badge">OBJECTIVE 02</span>
+          <p class="objective-text">
+            To promote interdisciplinary research and innovation at the interface of computing, engineering, and applied sciences.
+          </p>
+        </div>
+
+        <!-- Objective 03 -->
+        <div class="objective-card">
+          <span class="objective-num-badge">OBJECTIVE 03</span>
+          <p class="objective-text">
+            To encourage and strengthen collaboration between academia, industry, and research organisations nationally and internationally.
+          </p>
+        </div>
+
+        <!-- Objective 04 -->
+        <div class="objective-card">
+          <span class="objective-num-badge">OBJECTIVE 04</span>
+          <p class="objective-text">
+            To foster a strong research culture among students, faculty, and young researchers through exposure to cutting-edge work.
+          </p>
+        </div>
+
+        <!-- Objective 05 -->
+        <div class="objective-card">
+          <span class="objective-num-badge">OBJECTIVE 05</span>
+          <p class="objective-text">
+            To facilitate high-quality research publications in indexed and peer-reviewed proceedings and journals.
+          </p>
+        </div>
+
+        <!-- Objective 06 -->
+        <div class="objective-card">
+          <span class="objective-num-badge">OBJECTIVE 06</span>
+          <p class="objective-text">
+            To align academic and research activities with AICTE guidelines and the National Education Policy (NEP) 2020.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. THEMATIC FOCUS AREAS (8 Tracks)
+       ========================================================================= -->
+  <section class="section" id="tracks">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>RESEARCH DOMAINS</span>
+        </div>
+        <h2 class="section-title">THEMATIC FOCUS AREAS</h2>
+        <p class="section-subtitle">
+          Submit original research papers across the eight specialized computing domains of ICACIT 2027.
+        </p>
+      </div>
+
+      <!-- 8 Focus Areas (2x4 Grid) -->
+      <div class="tracks-8grid">
+        
+        <!-- Track 01 -->
+        <div class="track-item-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="track-card-top-row">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="track-num-square">01</div>
+              <h3 class="track-card-title">Artificial Intelligence and Machine Learning</h3>
+            </div>
+            <span class="track-caret-icon">▼</span>
+          </div>
+          <div class="track-accordion-drawer">
+            <p class="track-accordion-desc">
+              Foundational and applied algorithmic advances in deep neural models, generative AI, reinforcement learning, explainable AI (XAI), and autonomous intelligence.
+            </p>
+          </div>
+          <div class="track-hint-sub">Click to expand details</div>
+        </div>
+
+        <!-- Track 02 -->
+        <div class="track-item-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="track-card-top-row">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="track-num-square">02</div>
+              <h3 class="track-card-title">Data Science and Intelligent Analytics</h3>
+            </div>
+            <span class="track-caret-icon">▼</span>
+          </div>
+          <div class="track-accordion-drawer">
+            <p class="track-accordion-desc">
+              Large-scale distributed analytics, predictive statistical modeling, high-dimensional streaming data, graph analytics, and intelligent business informatics.
+            </p>
+          </div>
+          <div class="track-hint-sub">Click to expand details</div>
+        </div>
+
+        <!-- Track 03 -->
+        <div class="track-item-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="track-card-top-row">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="track-num-square">03</div>
+              <h3 class="track-card-title">Cyber Security and Blockchain Technologies</h3>
+            </div>
+            <span class="track-caret-icon">▼</span>
+          </div>
+          <div class="track-accordion-drawer">
+            <p class="track-accordion-desc">
+              Post-quantum cryptography, zero-trust network defenses, distributed ledger architectures, smart contract verification, and privacy-preserving protocols.
+            </p>
+          </div>
+          <div class="track-hint-sub">Click to expand details</div>
+        </div>
+
+        <!-- Track 04 -->
+        <div class="track-item-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="track-card-top-row">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="track-num-square">04</div>
+              <h3 class="track-card-title">IoT, Smart Systems and Embedded Technologies</h3>
+            </div>
+            <span class="track-caret-icon">▼</span>
+          </div>
+          <div class="track-accordion-drawer">
+            <p class="track-accordion-desc">
+              Ultra-low-power microcontrollers, intelligent sensor telemetry, cyber-physical systems, autonomous robotics, and smart city infrastructure.
+            </p>
+          </div>
+          <div class="track-hint-sub">Click to expand details</div>
+        </div>
+
+        <!-- Track 05 -->
+        <div class="track-item-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="track-card-top-row">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="track-num-square">05</div>
+              <h3 class="track-card-title">Cloud, Edge and Distributed Computing</h3>
+            </div>
+            <span class="track-caret-icon">▼</span>
+          </div>
+          <div class="track-accordion-drawer">
+            <p class="track-accordion-desc">
+              Serverless microservices, edge-native AI inference, heterogeneous hardware acceleration pipelines, and extreme-scale parallel distributed computing.
+            </p>
+          </div>
+          <div class="track-hint-sub">Click to expand details</div>
+        </div>
+
+        <!-- Track 06 -->
+        <div class="track-item-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="track-card-top-row">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="track-num-square">06</div>
+              <h3 class="track-card-title">Advanced Networks and Communication Technologies</h3>
+            </div>
+            <span class="track-caret-icon">▼</span>
+          </div>
+          <div class="track-accordion-drawer">
+            <p class="track-accordion-desc">
+              5G/6G communication systems, software-defined networking (SDN), cognitive radio, optical networks, and resilient vehicular ad-hoc networks (VANETs).
+            </p>
+          </div>
+          <div class="track-hint-sub">Click to expand details</div>
+        </div>
+
+        <!-- Track 07 -->
+        <div class="track-item-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="track-card-top-row">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="track-num-square">07</div>
+              <h3 class="track-card-title">Software Engineering and Emerging Computing Paradigms</h3>
+            </div>
+            <span class="track-caret-icon">▼</span>
+          </div>
+          <div class="track-accordion-drawer">
+            <p class="track-accordion-desc">
+              Quantum algorithms and fault-tolerant software, neuromorphic engineering, automated code intelligence, formal verification, and sustainable green computing.
+            </p>
+          </div>
+          <div class="track-hint-sub">Click to expand details</div>
+        </div>
+
+        <!-- Track 08 -->
+        <div class="track-item-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="track-card-top-row">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="track-num-square">08</div>
+              <h3 class="track-card-title">Intelligent Applications and Interdisciplinary Technologies</h3>
+            </div>
+            <span class="track-caret-icon">▼</span>
+          </div>
+          <div class="track-accordion-drawer">
+            <p class="track-accordion-desc">
+              AI applications in healthcare informatics, smart agriculture, digital forensics, assistive robotics, fintech systems, and computational social sciences.
+            </p>
+          </div>
+          <div class="track-hint-sub">Click to expand details</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. GOVERNANCE
+       ========================================================================= -->
+  <section class="section section-white" id="governance">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>ORGANIZING LEADERSHIP</span>
+        </div>
+        <h2 class="section-title">GOVERNANCE</h2>
+        <p class="section-subtitle">
+          Distinguished patronage and leadership guiding the execution of ICACIT 2027.
+        </p>
+      </div>
+
+      <div class="governance-hierarchy-wrap">
+        
+        <!-- Tier 1: Chief Patron -->
+        <div class="gov-tier-block">
+          <div class="gov-tier-header">
+            <span class="section-tag-dot"></span>
+            <span class="gov-tier-title">CHIEF PATRON</span>
+          </div>
+          <div class="gov-cards-grid" style="grid-template-columns: minmax(300px, 420px);">
+            <div class="gov-person-card">
+              <span class="gov-person-role">CHIEF PATRON</span>
+              <h3 class="gov-person-name">Er. Shri Bhikhubhai B. Patel</h3>
+              <span class="gov-person-note">Chairman, Charutar Vidyamandal (CVM)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 2: Patrons -->
+        <div class="gov-tier-block">
+          <div class="gov-tier-header">
+            <span class="section-tag-dot"></span>
+            <span class="gov-tier-title">PATRONS</span>
+          </div>
+          <div class="gov-cards-grid">
+            <div class="gov-person-card">
+              <span class="gov-person-role">PATRON</span>
+              <h3 class="gov-person-name">Shri Manishbhai S. Patel</h3>
+              <span class="gov-person-note">Vice-President, CVM</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">PATRON</span>
+              <h3 class="gov-person-name">Dr. S. G. Patel</h3>
+              <span class="gov-person-note">Hon. Secretary, CVM</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">PATRON</span>
+              <h3 class="gov-person-name">Shri Rashmi Patel</h3>
+              <span class="gov-person-note">Hon. Jt. Secretary, CVM</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">PATRON</span>
+              <h3 class="gov-person-name">Shri Mehul D. Patel</h3>
+              <span class="gov-person-note">Hon. Jt. Secretary, CVM</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">PATRON</span>
+              <h3 class="gov-person-name">Shri Vishal H. Patel</h3>
+              <span class="gov-person-note">Hon. Jt. Secretary, CVM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 3: Conference Chair & Co-Chairs -->
+        <div class="gov-tier-block">
+          <div class="gov-tier-header">
+            <span class="section-tag-dot"></span>
+            <span class="gov-tier-title">CONFERENCE CHAIR &amp; CO-CHAIRS</span>
+          </div>
+          <div class="gov-cards-grid">
+            <div class="gov-person-card">
+              <span class="gov-person-role">CONFERENCE CHAIR</span>
+              <h3 class="gov-person-name">Prof. (Dr.) Indrajit Patel</h3>
+              <span class="gov-person-note">Principal, MBIT</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">CONFERENCE CO-CHAIR</span>
+              <h3 class="gov-person-name">Prof. (Dr.) Sandeep Walia</h3>
+              <span class="gov-person-note">CVM University</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">CONFERENCE CO-CHAIR</span>
+              <h3 class="gov-person-name">Prof. (Dr.) Amit Ganatra</h3>
+              <span class="gov-person-note">CVM University</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">CONFERENCE CO-CHAIR</span>
+              <h3 class="gov-person-name">Prof. (Dr.) Maulika Patel</h3>
+              <span class="gov-person-note">CVM University</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 4: Conveners & Organizing Secretaries -->
+        <div class="gov-tier-block">
+          <div class="gov-tier-header">
+            <span class="section-tag-dot"></span>
+            <span class="gov-tier-title">CONVENERS &amp; ORGANIZING SECRETARIES</span>
+          </div>
+          <div class="gov-cards-grid">
+            <div class="gov-person-card">
+              <span class="gov-person-role">CONVENER</span>
+              <h3 class="gov-person-name">Dr. Gopi Bhatt</h3>
+              <span class="gov-person-note">MBIT, CVM University</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">CONVENER</span>
+              <h3 class="gov-person-name">Dr. Jagruti Prajapati</h3>
+              <span class="gov-person-note">MBIT, CVM University</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">CONVENER</span>
+              <h3 class="gov-person-name">Dr. Kalpesh Jadav</h3>
+              <span class="gov-person-note">MBIT, CVM University</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">ORGANIZING SECRETARY</span>
+              <h3 class="gov-person-name">Dr. Kishori Shekokar</h3>
+              <span class="gov-person-note">MBIT, CVM University</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">ORGANIZING SECRETARY</span>
+              <h3 class="gov-person-name">Dr. Rajdipshinh Vaghela</h3>
+              <span class="gov-person-note">MBIT, CVM University</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">ORGANIZING SECRETARY</span>
+              <h3 class="gov-person-name">Dr. Mehul Thakkar</h3>
+              <span class="gov-person-note">MBIT, CVM University</span>
+            </div>
+            <div class="gov-person-card">
+              <span class="gov-person-role">ORGANIZING SECRETARY</span>
+              <h3 class="gov-person-name">Dr. Pritesh Pandey</h3>
+              <span class="gov-person-note">MBIT, CVM University</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keynote Speakers Status Banner -->
+        <div class="speakers-tba-banner">
+          <div class="speakers-tba-title">KEYNOTE SPEAKERS</div>
+          <p class="speakers-tba-sub">
+            Distinguished international academic luminaries and industry keynote faculty list will be announced soon. Stay tuned for plenary updates.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. TENTATIVE TIMELINE
+       ========================================================================= -->
+  <section class="section" id="timeline">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>MILESTONES &amp; SCHEDULE</span>
+        </div>
+        <h2 class="section-title">TENTATIVE TIMELINE</h2>
+        <p class="section-subtitle">
+          Mark your calendar with the tentative milestone timeline for submission, review, and registration.
+        </p>
+      </div>
+
+      <!-- 5-Step Tentative Timeline Grid -->
+      <div class="timeline-5grid">
+        
+        <!-- Step 1 -->
+        <div class="timeline-step-box">
+          <div class="timeline-month-badge">JAN 2027</div>
+          <h3 class="timeline-step-title">Call For Papers</h3>
+          <span class="timeline-step-tag">ANNOUNCEMENT</span>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step-box">
+          <div class="timeline-month-badge">MAR 2027</div>
+          <h3 class="timeline-step-title">Last Date for Submission</h3>
+          <span class="timeline-step-tag">SUBMISSION DEADLINE</span>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step-box">
+          <div class="timeline-month-badge">APR 2027</div>
+          <h3 class="timeline-step-title">Peer Review Completion &amp; Notification</h3>
+          <span class="timeline-step-tag">ACCEPTANCE NOTICE</span>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-step-box">
+          <div class="timeline-month-badge">MAY 2027</div>
+          <h3 class="timeline-step-title">Registration &amp; Camera-Ready Paper Submission</h3>
+          <span class="timeline-step-tag">FINAL MANUSCRIPT</span>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-step-box" style="border-color: var(--border-pink); background: linear-gradient(180deg, #FFFFFF 0%, #FAF6FF 100%);">
+          <div class="timeline-month-badge" style="color: var(--color-pink);">JUN 2027</div>
+          <h3 class="timeline-step-title">Conference Dates (2 Days)</h3>
+          <span class="timeline-step-tag" style="color: var(--color-blue);">CONFERENCE SESSIONS</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. REGISTRATION FEE STRUCTURE
+       ========================================================================= -->
+  <section class="section section-white" id="registration">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>REGISTRATION &amp; PARTICIPATION</span>
+        </div>
+        <h2 class="section-title">REGISTRATION FEE STRUCTURE</h2>
+        <p class="section-subtitle">
+          Transparent delegate and author registration fee tiers across domestic and international categories.
+        </p>
+      </div>
+
+      <!-- Responsive Fee Table -->
+      <div class="fee-table-container">
+        <table class="fee-table" aria-label="ICACIT 2027 Registration Fee Tiers">
+          <thead>
+            <tr>
+              <th scope="col">CATEGORY</th>
+              <th scope="col">EARLY BIRD</th>
+              <th scope="col">REGULAR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fee-category-title">Students (UG/PG/PhD)</td>
+              <td><span class="fee-price-pill">INR 2,000</span></td>
+              <td><span class="fee-price-val">INR 2,500</span></td>
+            </tr>
+            <tr>
+              <td class="fee-category-title">Faculty Members</td>
+              <td><span class="fee-price-pill">INR 5,000</span></td>
+              <td><span class="fee-price-val">INR 5,500</span></td>
+            </tr>
+            <tr>
+              <td class="fee-category-title">Industry Professionals</td>
+              <td><span class="fee-price-pill">INR 5,500</span></td>
+              <td><span class="fee-price-val">INR 6,000</span></td>
+            </tr>
+            <tr>
+              <td class="fee-category-title">International Delegates</td>
+              <td><span class="fee-price-pill">USD 70</span></td>
+              <td><span class="fee-price-val">USD 80</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="margin-top: 2rem; display: flex; justify-content: flex-end;">
+          <button class="btn-learn-more" data-modal-target="modalRegistration">Proceed to Registration</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. RELEVANCE TO CURRICULUM, RESEARCH AND INDUSTRY
+       ========================================================================= -->
+  <section class="section" id="relevance">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>ACADEMIC &amp; INDUSTRIAL IMPACT</span>
+        </div>
+        <h2 class="section-title">RELEVANCE TO CURRICULUM, RESEARCH AND INDUSTRY</h2>
+      </div>
+
+      <!-- Split Editorial Grid -->
+      <div class="relevance-split-grid">
+        
+        <!-- Card 1: Curriculum & Practical Bridge -->
+        <div class="relevance-card">
+          <h3 class="relevance-card-title">Curriculum Alignment &amp; Applied Innovation</h3>
+          <p class="relevance-card-text">
+            ICACIT-2027 is directly aligned with the emerging areas embedded in the revised engineering curriculum under AICTE and NEP-2020, including Artificial Intelligence, Data Science, Cybersecurity, and Intelligent Systems.
+          </p>
+          <p class="relevance-card-text" style="margin-top: 1rem;">
+            The conference will bridge the gap between theoretical learning and practical industry application by creating a forum where cutting-edge research and real-world innovation meet.
+          </p>
+        </div>
+
+        <!-- Card 2: Research Growth & Industry Collaboration -->
+        <div class="relevance-card">
+          <h3 class="relevance-card-title">Research Stimulation &amp; Industry Collaboration</h3>
+          <p class="relevance-card-text">
+            From a research perspective, the event will stimulate quality publications, encourage identification of research gaps, and promote cross-disciplinary collaboration among institutions.
+          </p>
+          <p class="relevance-card-text" style="margin-top: 1rem;">
+            For industry, the conference will serve as a recruitment and collaboration platform, enabling technology companies to engage directly with faculty and students working in relevant domains.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. ABOUT ORGANISING INSTITUTION & CVM UNIVERSITY
+       ========================================================================= -->
+  <section class="section section-white" id="institution">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>HOST INSTITUTIONS</span>
+        </div>
+        <h2 class="section-title">ABOUT ORGANISING INSTITUTION</h2>
+      </div>
+
+      <div class="institution-split-grid">
+        
+        <!-- Institution 1: MBIT -->
+        <div class="institution-card">
+          <span class="institution-tag">ORGANISING INSTITUTE</span>
+          <h3 class="institution-name">MADHUBEN AND BHANUBHAI PATEL INSTITUTE OF TECHNOLOGY (MBIT)</h3>
+          <p class="institution-desc">
+            Madhuben and Bhanubhai Patel Institute of Technology (MBIT) is a premier engineering institute affiliated with CVM University, Vallabh Vidyanagar, Gujarat, India. The institution is recognised by AICTE and is committed to excellence in technical education, research, and innovation.
+          </p>
+          <p class="institution-desc" style="font-weight: 600; color: var(--color-blue);">
+            The Departments of Computer Engineering and Information Technology jointly present this proposal to host an international conference in collaboration with NFSU.
+          </p>
+        </div>
+
+        <!-- Institution 2: CVM University -->
+        <div class="institution-card">
+          <span class="institution-tag">AFFILIATING UNIVERSITY</span>
+          <h3 class="institution-name">CVM UNIVERSITY</h3>
+          <p class="institution-desc">
+            CVM University is a well-established private university with a strong track record of academic events, research activities, and industry collaboration.
+          </p>
+          <p class="institution-desc">
+            The university infrastructure includes state-of-the-art seminar halls, auditoriums, ICT-enabled classrooms, high-speed internet connectivity, and dedicated research labs, making it a suitable and capable host for an international-level conference.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. VENUE
+       ========================================================================= -->
+  <section class="section" id="venue">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>CAMPUS LOCATION</span>
+        </div>
+        <h2 class="section-title">CONFERENCE VENUE</h2>
+        <p class="section-subtitle">
+          Hosted in the academic town of Vallabh Vidyanagar, Gujarat, India.
+        </p>
+      </div>
+
+      <div class="venue-grid-wrap">
+        
+        <!-- Venue Details -->
+        <div class="venue-details-card">
+          <div>
+            <span class="section-tag" style="margin-bottom: 1rem;">📍 OFFICIAL VENUE</span>
+            <h3 class="venue-place-title">MBIT Campus</h3>
+            <div class="venue-place-sub">Madhuben and Bhanubhai Patel Institute of Technology</div>
+            <p class="venue-place-addr">
+              CVM University, Beyond GIDC Phase IV, Vithal Udyognagar, Vallabh Vidyanagar, Gujarat 388121, India.
+            </p>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <button class="btn-learn-more" onclick="window.showToast('Campus location: Vallabh Vidyanagar, Anand, Gujarat');">
+              View Venue Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Connectivity Info -->
+        <div class="venue-conn-card">
+          <div class="conn-row-item">
+            <div class="conn-icon-bubble">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"></path><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </div>
+            <div>
+              <h4 class="conn-item-title">Airport Connectivity</h4>
+              <p class="conn-item-desc">Vadodara Airport (BDQ) — approx 45 mins. Ahmedabad International Airport (AMD) — approx 75 mins.</p>
+            </div>
+          </div>
+
+          <div class="conn-row-item">
+            <div class="conn-icon-bubble">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path></svg>
+            </div>
+            <div>
+              <h4 class="conn-item-title">Railway Hub</h4>
+              <p class="conn-item-desc">Anand Junction (ANND) is just 6 km away with direct major rail routes across India.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. FINAL CTA BANNER
+       ========================================================================= -->
+  <section class="section" style="padding-top: 2rem; padding-bottom: 4.5rem;">
+    <div class="container">
+      
+      <div class="final-cta-banner">
+        <h2 class="final-cta-title">Ready to Participate in ICACIT 2027?</h2>
+        <p class="final-cta-subtitle">
+          Submit your research paper to ICACIT 2027 and join researchers, academicians, and industry leaders in shaping the future of advanced computing.
+        </p>
+
+        <div class="final-cta-buttons">
+          <button class="btn-hero-action" data-modal-target="modalSubmission">SUBMIT PAPER</button>
+          <a href="#registration" class="btn-hero-glass">REGISTER NOW</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       14. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer-icacit" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-main-grid">
+        
+        <!-- Col 1: Conference Details -->
+        <div>
+          <div class="footer-brand-title">ICACIT 2027</div>
+          <p class="footer-desc">
+            International Conference on Advanced Computing and Intelligent Technologies
+          </p>
+          <p class="footer-desc" style="color: var(--color-pink); font-weight: 600;">
+            MBIT Campus, CVM University<br>
+            Vallabh Vidyanagar, Gujarat, India
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <div class="footer-head">Quick Links</div>
+          <div class="footer-nav-list">
+            <a href="#about">About</a>
+            <a href="#objectives">Objectives</a>
+            <a href="#tracks">Focus Areas</a>
+            <a href="#governance">Governance</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Milestones & Fees -->
+        <div>
+          <div class="footer-head">Conference</div>
+          <div class="footer-nav-list">
+            <a href="#timeline">Timeline</a>
+            <a href="#registration">Registration</a>
+            <a href="#institution">Institution</a>
+            <a href="#venue">Venue</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Host Campus -->
+        <div>
+          <div class="footer-head">Host Campus</div>
+          <div class="footer-desc">
+            Madhuben and Bhanubhai Patel Institute of Technology (MBIT)<br>
+            Charutar Vidyamandal (CVM) University<br>
+            Vallabh Vidyanagar, Gujarat 388121, India
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom-row">
+        <div>
+          Copyright &copy; 2027 ICACIT. All rights reserved. | Hosted by MBIT, CVM University
+        </div>
+        <div style="color: var(--color-pink); font-weight: 600;">
+          JUNE 2027 (2 DAYS)
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       15. INTERACTIVE MODALS
+       ========================================================================= -->
+
+  <!-- 1. Submission Modal -->
+  <div class="modal-overlay" id="modalSubmission" role="dialog" aria-modal="true" aria-labelledby="subModalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="subModalTitle">Paper Submission (ICACIT 2027)</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">
+          Manuscripts must report original, previously unpublished research on advanced computing and intelligent technologies. All submissions undergo double-blind peer review.
+        </p>
+
+        <div style="background: #F6F6FF; border: 1px solid rgba(30, 86, 255, 0.15); border-radius: var(--radius-lg); padding: 1.25rem; margin: 1.25rem 0;">
+          <h4 style="font-size: 0.85rem; font-weight: 700; color: var(--color-blue); text-transform: uppercase; margin-bottom: 0.5rem;">
+            Submission Guidelines
+          </h4>
+          <ul style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.8;">
+            <li><strong>Tentative Submission Deadline:</strong> March 2027</li>
+            <li><strong>Format:</strong> Standard double-column research format</li>
+            <li><strong>Review Process:</strong> Double-blind peer review</li>
+          </ul>
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1.5rem;">
+          <button class="btn-learn-more" onclick="window.showToast('Paper submission portal link will be active upon Call For Papers launch in Jan 2027');">
+            <span>Submission Portal (Coming Soon)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Registration Modal -->
+  <div class="modal-overlay" id="modalRegistration" role="dialog" aria-modal="true" aria-labelledby="regModalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="regModalTitle">Registration (ICACIT 2027)</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">
+          Registration is mandatory for at least one author per accepted paper.
+        </p>
+
+        <div style="background: #F6F6FF; border: 1px solid rgba(30, 86, 255, 0.15); border-radius: var(--radius-lg); padding: 1.25rem; margin: 1.25rem 0;">
+          <h4 style="font-size: 0.85rem; font-weight: 700; color: var(--color-blue); text-transform: uppercase; margin-bottom: 0.5rem;">
+            Fee Tiers
+          </h4>
+          <ul style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.8;">
+            <li><strong>Students (UG/PG/PhD):</strong> Early Bird: INR 2,000 | Regular: INR 2,500</li>
+            <li><strong>Faculty Members:</strong> Early Bird: INR 5,000 | Regular: INR 5,500</li>
+            <li><strong>Industry Professionals:</strong> Early Bird: INR 5,500 | Regular: INR 6,000</li>
+            <li><strong>International Delegates:</strong> Early Bird: USD 70 | Regular: USD 80</li>
+          </ul>
+        </div>
+
+        <button class="btn-learn-more" style="margin-top: 1rem;" onclick="window.showToast('Registration gateway will open in May 2027 as per tentative timeline');">
+          <span>Registration Gateway (Opens May 2027)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Floating Button -->
+  <button class="btn-scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/tracks.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
