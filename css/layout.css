@@ -421,71 +421,7 @@
   transform: translateY(-2px);
 }
 
-/* --- 3. Objectives Grid --- */
-.objectives-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 1.5rem;
-}
-
-.objective-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-xl);
-  padding: 2rem;
-  box-shadow: var(--shadow-soft);
-  transition: all var(--transition-smooth);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-}
-
-.objective-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--grad-accent);
-  opacity: 0;
-  transition: opacity var(--transition-fast);
-}
-
-.objective-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--border-pink);
-  box-shadow: var(--shadow-card);
-}
-
-.objective-card:hover::before {
-  opacity: 1;
-}
-
-.objective-num-badge {
-  font-family: var(--font-family-mono);
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--color-blue);
-  background: var(--bg-surface-subtle);
-  border: 1px solid var(--border-subtle);
-  padding: 0.3rem 0.75rem;
-  border-radius: var(--radius-pill);
-  display: inline-block;
-  align-self: flex-start;
-  margin-bottom: 1rem;
-}
-
-.objective-text {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.65;
-  margin: 0;
-  font-weight: 400;
-}
-
-/* --- 4. 8 Thematic Focus Areas (2x4 Grid) --- */
+/* --- 3. 8 Thematic Focus Areas (2x4 Grid) --- */
 .tracks-8grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -790,35 +726,7 @@
   color: var(--text-main);
 }
 
-/* --- 8. Relevance & Institution Editorial Layout --- */
-.relevance-split-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.relevance-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-2xl);
-  padding: 2.5rem;
-  box-shadow: var(--shadow-soft);
-}
-
-.relevance-card-title {
-  font-family: var(--font-family-heading);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 1rem;
-}
-
-.relevance-card-text {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.75;
-  margin: 0;
-}
+/* --- 7. Institution Editorial Layout --- */
 
 /* Institution Cards */
 .institution-split-grid {
@@ -1107,7 +1015,6 @@
   }
 
   .tracks-8grid,
-  .relevance-split-grid,
   .institution-split-grid,
   .venue-grid-wrap {
     grid-template-columns: 1fr;
